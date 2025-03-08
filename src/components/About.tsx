@@ -27,7 +27,7 @@ const About = () => {
           <motion.div 
             className="chip inline-block mb-4"
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: a0.8 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             About Me
