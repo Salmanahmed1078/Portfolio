@@ -119,6 +119,23 @@ export default {
 					'0%': { transform: 'rotate(0deg)' },
 					'100%': { transform: 'rotate(360deg)' },
 				},
+				'text-shimmer': {
+					'0%': { backgroundPosition: '0% 50%' },
+					'100%': { backgroundPosition: '100% 50%' }
+				},
+				'glow': {
+					'0%, 100%': { boxShadow: '0 0 5px var(--tw-shadow-color), 0 0 10px var(--tw-shadow-color)' },
+					'50%': { boxShadow: '0 0 20px var(--tw-shadow-color), 0 0 30px var(--tw-shadow-color)' }
+				},
+				'morph': {
+					'0%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' },
+					'50%': { borderRadius: '30% 60% 70% 40%/50% 60% 30% 60%' },
+					'100%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' }
+				},
+				'background-pan': {
+					'0%': { backgroundPosition: '0% center' },
+					'100%': { backgroundPosition: '-200% center' }
+				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -132,6 +149,15 @@ export default {
 				'float': 'float 6s ease-in-out infinite',
 				'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
 				'spin-slow': 'spin-slow 15s linear infinite',
+				'text-shimmer': 'text-shimmer 3s infinite linear',
+				'glow': 'glow 2s ease-in-out infinite',
+				'morph': 'morph 8s ease-in-out infinite',
+				'background-pan': 'background-pan 3s linear infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'hero-pattern': 'url("/hero-pattern.svg")',
+				'tech-pattern': 'url("/tech-pattern.svg")',
 			},
 		}
 	},
