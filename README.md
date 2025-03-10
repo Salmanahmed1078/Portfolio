@@ -1,10 +1,12 @@
-Portfolio
+# Portfolio
 
-Project Information
+# Project Information
 
 This is my personal portfolio website, showcasing my skills, projects, and professional experience.
 
-Live demo [https://salman-ahmed-seven.vercel.app/]
+# Live demo
+[https://salman-ahmed-seven.vercel.app/]
+
 Technologies Used
 
 Vite - Fast build tool for modern web projects.
