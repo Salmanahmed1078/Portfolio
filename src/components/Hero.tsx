@@ -38,6 +38,19 @@ const Hero = () => {
       className="min-h-screen flex flex-col items-center justify-center px-6 py-24 md:px-12 lg:px-24 relative mouse-cursor-gradient-tracking overflow-hidden"
       id="home"
     >
+      {/* Animated Particles */}
+      <motion.div 
+        className="absolute inset-0 z-0 opacity-20"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.2 }}
+        transition={{ duration: 1.5 }}
+      >
+        <div className="absolute w-1 h-1 bg-primary rounded-full" 
+          style={{ top: '30%', left: '20%', boxShadow: '0 0 20px 8px rgba(99, 102, 241, 0.2)' }} />
+        <div className="absolute w-1 h-1 bg-accent rounded-full"
+          style={{ top: '50%', right: '25%', boxShadow: '0 0 20px 8px rgba(236, 72, 153, 0.2)' }} />
+      </motion.div>
+
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background/80 z-[1]" />
       
@@ -51,7 +64,7 @@ const Hero = () => {
           className="space-y-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
           <motion.div 
             className="chip mb-6 backdrop-blur-sm inline-block"

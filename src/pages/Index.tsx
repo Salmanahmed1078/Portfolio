@@ -9,6 +9,7 @@ import Projects from '../components/Projects';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+// Removed Testimonials import
 import { Moon, Sun } from 'lucide-react';
 
 const Index = () => {
@@ -82,7 +83,6 @@ const Index = () => {
         <About />
         <Skills />
         <Projects />
-        <Testimonials />
         <Contact />
         <Footer />
       </motion.div>

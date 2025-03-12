@@ -22,7 +22,7 @@ const Projects = () => {
       title: 'Cannon Slinger',
       description: 'A physics-based game where players launch projectiles to hit targets, featuring realistic physics and challenging levels.',
       tech: ['Unity', 'C#', 'Physics', 'Game Design'],
-      image: '/placeholder.svg',
+      image: '/cannon-slinger.jpg',
       github: 'https://github.com/Salmanahmed1078',
       live: 'https://cannonslinger.demo',
       featured: true
@@ -31,7 +31,7 @@ const Projects = () => {
       title: 'Tetris Game',
       description: 'A classic Tetris game implementation with modern graphics, featuring multiple game modes and responsive controls.',
       tech: ['C++', 'SFML', 'Game Design', 'Algorithms'],
-      image: '/placeholder.svg',
+      image: '/tetris-screenshot.jpg',
       github: 'https://github.com/Salmanahmed1078',
       featured: true
     },
@@ -142,13 +142,15 @@ const ProjectCard = ({
       variants={cardVariants}
     >
       <div className="rotating-border">
-        <div className="glass-card overflow-hidden backdrop-blur-md relative preserve-3d transition-all duration-500 h-full">
+        <div className="glass-card overflow-hidden backdrop-blur-md relative preserve-3d transition-all duration-500 h-full hover:shadow-xl">
           {/* Project Image */}
-          <div className="h-48 bg-secondary/30 relative overflow-hidden">
-            <img 
+          <div className="h-48 bg-secondary/30 relative overflow-hidden group">
+            <motion.img 
               src={project.image} 
-              alt={project.title} 
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              alt={project.title}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              initial={{ opacity: 0.9 }}
+              whileHover={{ opacity: 1 }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
               <div className="flex space-x-2">
